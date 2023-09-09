@@ -1,0 +1,10 @@
+{
+  "name": "@acco-cli/example-lib",
+  "version": "0.0.1",
+  "description": "Starter template for library",
+  "main": "index.js",
+  "scripts": {
+    "acco": "acco"
+  },
+  "dependencies": {}
+}

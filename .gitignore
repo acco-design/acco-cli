@@ -1,0 +1,27 @@
+# Editor directories and files
+/.vscode/
+.vscode
+.idea
+
+# Package Manager
+node_modules
+pnpm-lock.yaml
+
+# Bundle
+coverage
+types
+esm
+lib
+
+# local env files
+*.local
+
+# eslint
+.eslintcache
+
+# Log
+*.log
+
+# System
+.DS_Store
+

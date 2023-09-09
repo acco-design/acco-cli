@@ -1,0 +1,25 @@
+{
+  "name": "@acco-cli/acco",
+  "version": "0.0.1",
+  "description": "Main entry for acco cli",
+  "license": "MIT",
+  "author": "fitingrace@gmail.com",
+  "typings": "types/src/index.d.ts",
+  "main": "lib/index.js",
+  "bin": {
+    "acco": "bin/index.js"
+  },
+  "files": [
+    "types",
+    "lib",
+    "bin"
+  ],
+  "scripts": {
+    "build:types": "rimraf types && tsc --outDir types --emitDeclarationOnly",
+    "build:lib": "rimraf lib && babel --config-file ../../babel.config.js src --extensions .ts --out-dir lib --copy-files",
+    "build": "yarn build:types && yarn build:lib"
+  },
+  "dependencies": {
+    "commander": "^11.0.0"
+  }
+}
